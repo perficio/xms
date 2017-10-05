@@ -1,14 +1,24 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar color="primary">
+        <ion-title>
+            XMS Mobile Scaner
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <p class="text-center">
+        <img src="img/Mailroom1.png" />
+    </p>
+    <br/>
+    <p class="text-center">
+        <button ion-button color="success" block="true" (click)="scanPackage()">
+      Scan Package
+    </button>
+    </p>
+    <br/>
+    <ion-fab bottom right>
+        <button ion-fab color="success" (click)="editServername()"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+
 </ion-content>
